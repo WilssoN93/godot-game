@@ -12,7 +12,7 @@ extents = Vector2( 32, 32 )
 [node name="world" type="Node"]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 519, 288 )
+position = Vector2( 489, 320 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -25,6 +25,7 @@ shape = SubResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="walls" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="wall" type="StaticBody2D" parent="walls"]
 editor/display_folded = true
