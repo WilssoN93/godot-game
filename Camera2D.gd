@@ -1,11 +1,11 @@
 extends Camera2D
+onready var player = get_node("..")
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-
+func _ready():
+	limit_bottom = 500
 func _process(delta):
-	
-	pass
+	if player.get_position().y >= limit_bottom + 100:
+		print(player.get_position().y)
+		get_tree().reload_current_scene()
+		
+		
